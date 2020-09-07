@@ -1,0 +1,348 @@
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="scripts/pizza.js"></script>
+<script src="scripts/game.js"></script>
+<link href="stylesheets/game.css" rel="stylesheet">
+
+<title>KC & Friends - Pizza</title>
+
+<link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+<link rel="manifest" href="favicon_io/site.webmanifest">
+
+<style>
+
+body {
+    font-family: Cartoonist;
+}
+#sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 400px;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+#left_sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 400px;
+    height: 100%;
+    z-index: 999;
+    padding: 20px;
+    box-sizing: border-box;
+}
+#sidebar button.show {
+    display: block;
+    background: #4BCFB5;
+    border: 2px solid #23A389;
+    padding: 10px;
+    width: 200px;
+    margin: 5px auto;
+    font-family: Cartoonist;
+    font-size: 18px;
+}
+#right_sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 350px;
+    height: 100%;
+}
+#main {
+    position: fixed;
+    top: 0;
+    height: 100%;
+}
+#mainpizza {
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    width: 500px;
+    height: 500px;
+    margin: -250px 0px 0px 50px;
+}
+span.medium, span.hard {
+    display: none;
+}
+span.easy {
+    background: #7BBB34;
+}
+span.medium {
+    background: #F79300;
+}
+span.hard {
+    background: #FF0000;
+}
+.minipizzas {
+    width: 100%;
+    height: 50px;
+    margin: 20px auto;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    padding: 10px;
+}
+.drag_parent {
+    background: none;
+    border: 0px solid #000;
+}
+#q1, #q4, #q5, #q8 {
+    width: 70px;
+    height: auto;
+}
+#q2, #q3, #q6, #q7 {
+    width: 98px;
+    height: auto;
+}
+#lvl3, #lvl4 {
+    display: none;
+}
+.left, .right {
+    width: 100px;
+    display: inline-block;
+}
+.drag {
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: -webkit-crisp-edges;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -o-crisp-edges;
+  image-rendering: pixelated;
+  pointer-events: auto;
+}
+.drag_parent {
+    position: absolute;
+}
+#test {
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    position: fixed;
+    background: #000;
+}
+#demo {
+    top: 40px;
+    left: 0;
+    width: 100px;
+    height: 50px;
+    background: #fff;
+    position: fixed;
+}
+.scale-up {
+    transform: scale(2.5);
+}
+.scale-down {
+    transform: scale(0.25);
+}
+.test {position:absolute}
+.minipizza {
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #000;
+    display: none;
+}
+</style>
+
+<body>
+
+
+<div id="sidebar">
+
+<button id="wnotes" class="show">Show whole notes</button>
+<button id="hnotes" class="show">Show half notes</button>
+<button id="qnotes" class="show">Show quarter notes</button>
+<button id="enotes" class="show">Show eighth notes</button>
+
+<div id="wnotes_p" class="minipizza">whole notes</div>
+<div id="hnotes_p" class="minipizza">half notes</div>
+<div id="qnotes_p" class="minipizza">quarter notes</div>
+<div id="enotes_p" class="minipizza">eighth notes</div>
+
+
+
+</div>
+
+<div id="workspace"></div>
+
+
+<div style="display:none">
+
+<div id="left_sidebar">
+<div id="demo"></div>
+<div id="test"></div>
+
+<center style="display:none"><h2>Slices</h2>
+<div style="margin: 15px auto 30px">Difficulty:
+<span class="easy diff">LEVEL 2</span>
+<span class="medium diff">LEVEL 3</span>
+<span class="hard diff">LEVEL 4</span>
+<br><input type="range" id="difficulty" name="difficulty" class="slider" min="0" max="2"></div>
+</center>
+
+
+<div id="lvl2" class="minipizzas">
+
+<div id="imaggess" style="display:block">
+<img class="test" id="q1" src="assets/pizza/q1.png" style="top: 107px; left: 100px;">
+<img class="test" id="q2" src="assets/pizza/q2.png" style="top: 134px; left: 101px;">
+<img class="test" id="q3" src="assets/pizza/q3.png" style="top: 204px; left: 101px;">
+<img class="test" id="q4" src="assets/pizza/q4.png" style="top: 207px; left: 101px;">
+<img class="test" id="q5" src="assets/pizza/q5.png" style="top: 207px; left: 33px;">
+<img class="test" id="q6" src="assets/pizza/q6.png" style="top: 204px; left: 7px;">
+<img class="test" id="q7" src="assets/pizza/q7.png" style="top: 133px; left: 7px;">
+<img class="test" id="q8" src="assets/pizza/q8.png" style="top: 107px; left: 35px;">
+</div>
+
+</div>
+
+<div id="lvl3" class="minipizzas">level 3 pizzas</div>
+
+<div id="lvl4" class="minipizzas">level 4 pizzas</div>
+
+
+</div>
+
+<div id="main"><div class="pos_rel">
+
+<center><img id="mainpizza" src="https://i.pinimg.com/originals/b5/b9/13/b5b9139a9d3958d7afb0e3b724113359.png"></center>
+
+</div></div>
+
+</div>
+
+</body>
+
+<script>
+
+window.onload = arrangePage();
+var mainpizza = document.getElementById('mainpizza');
+
+function arrangePage() {
+    pizzaOffset();
+    rightSidebarWidth();
+    function pizzaOffset() {
+        var leftSidebarWidth = $('#left_sidebar').width();
+        $('#main').css('left', leftSidebarWidth);
+    }
+    function rightSidebarWidth() {
+        var pizzaOffset = $('#mainpizza').offset();
+        var pizzaOffsetLeft = pizzaOffset.left;
+        var pizzaWidth = $('#mainpizza').width();
+        var pizzaExtension = (pizzaOffsetLeft + pizzaWidth);
+        var documentWidth = $(document).width();
+        var remainder = (documentWidth - pizzaExtension);
+        $('#right_sidebar').css('width', '350px');
+        
+    }
+}
+
+// difficulty slider
+
+document.getElementById("difficulty").defaultValue = '0';
+$('#difficulty').change(function() {
+    if ($(this).val() == '0') {
+        $('span.easy').css('display', 'inline-block');
+        $('span.medium').css('display', 'none');
+        $('span.hard').css('display', 'none');
+        $('#lvl3').css('display', 'none');
+        $('#lvl4').css('display', 'none');
+    }
+    else if ($(this).val() == '1') {
+        $('span.easy').css('display', 'none');
+        $('span.medium').css('display', 'inline-block');
+        $('span.hard').css('display', 'none');
+        $('#lvl3').css('display', 'block');
+        $('#lvl4').css('display', 'none');
+    }
+    else if ($(this).val() == '2') {
+        $('span.easy').css('display', 'none');
+        $('span.medium').css('display', 'none');
+        $('span.hard').css('display', 'inline-block');
+        $('#lvl4').css('display', 'block');
+    }
+});
+$('input[type=range]').on('input', function() {
+    $(this).trigger('change');
+});
+
+// show mini pizzas
+
+var buttonW = document.getElementsById('wnotes');
+var buttonH = document.getElementsById('hnotes');
+var buttonQ = document.getElementsById('qnotes');
+var buttonE = document.getElementsById('enotes');
+
+buttonW.addEventListener('click', showW);
+function showW() {
+    var element = document.getElementById('wnotes_p');
+    var actives = document.getElementsByClassName('active');
+};
+
+// drag mini pizzas
+
+var paths = document.getElementsByClassName('drag');
+for (i = 0; i < paths.length; i++) {
+    var child = paths[i];
+    dragElement(child);
+}
+var pizzas = document.getElementsByClassName('test');
+for (i = 0; i < pizzas.length; i++) {
+    var pizza = pizzas[i];
+    dragElement(pizza);
+}
+
+function dragElement(elmnt) {
+    var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+    elmnt.onmousedown = dragMouseDown;
+    function dragMouseDown(e) {
+        e = e || window.event;
+        e.preventDefault();
+        // get the mouse cursor position at startup:
+        pos3 = e.clientX;
+        pos4 = e.clientY;
+        document.onmouseup = closeDragElement;
+        // call a function whenever the cursor moves:
+        document.onmousemove = elementDrag;
+        $(elmnt).css("position", "absolute");
+        // change cursor while element is being dragged:
+        $(elmnt).addClass('dragging');
+        $('body').addClass('dragging');
+    }
+    function elementDrag(e) {
+        e = e || window.event;
+        e.preventDefault();
+        // calculate the new cursor position:
+        pos1 = pos3 - e.clientX;
+        pos2 = pos4 - e.clientY;
+        pos3 = e.clientX;
+        pos4 = e.clientY;
+            // set the element's new position while the element is being dragged:
+            function getOffset(element) {
+                var bound = element.getBoundingClientRect();        
+                return {
+                    top: bound.top - pos2,
+                    left: bound.left - pos1
+                }
+            }
+        var offset = getOffset(elmnt);
+        var fromTop = (offset.top + "px");
+        var fromLeft = (offset.left + "px");
+        $(elmnt).css('top', fromTop);
+        $(elmnt).css('left', fromLeft);
+    }
+    function closeDragElement() {
+        /* stop moving when mouse button is released:*/
+        document.onmouseup = null;
+        document.onmousemove = null;
+        // change cursor back to normal:
+        $(elmnt).removeClass('dragging');
+        $('body').removeClass('dragging');
+    }
+}
+
+
+</script>
