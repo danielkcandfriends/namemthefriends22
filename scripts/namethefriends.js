@@ -1,9 +1,5 @@
 var easyCards = [
-    'https://i.imgur.com/Eg7JzeC.png',
-
-    ]
-var mediumCards = [
-
+  
    ' https://i.imgur.com/3tYeVvI.png',
     'https://i.imgur.com/Ed2gYdN.png',
 '    https://i.imgur.com/TDbamJp.png',
@@ -45,6 +41,32 @@ var mediumCards = [
   '  https://i.imgur.com/92yOs0q.png',
   '  https://i.imgur.com/zrO0n4Y.png',
   '  https://i.imgur.com/VpoK5Z3.png',
+    
+
+    ]
+var mediumCards = [
+
+   ' https://i.imgur.com/2XLSxKE.png',
+    'https://i.imgur.com/sUBEZnx.png',
+'    https://i.imgur.com/HhOAEcc.png',
+ '   https://i.imgur.com/V8zj8oR.png',
+  '  https://i.imgur.com/pP9C5xy.png',
+  '  https://i.imgur.com/UCcYgRj.png',
+   
+'   https://i.imgur.com/rmLryiV.png',
+'   https://i.imgur.com/bjtihMV.png',
+    
+'https://i.imgur.com/ct0pgp4.png',
+    
+  '  https://i.imgur.com/Z63iFzZ.png',
+ 
+  '  https://i.imgur.com/8hGTjqx.png',
+ '   https://i.imgur.com/oQka5oy.png',
+  '  https://i.imgur.com/OfBciUI.png',
+    
+  '  https://i.imgur.com/cgApzxB.png',
+
+  
     
 
     ]
