@@ -1,47 +1,36 @@
 var easyCards = [
   
-   ' https://i.imgur.com/3tYeVvI.png',
-    'https://i.imgur.com/Ed2gYdN.png',
-'    https://i.imgur.com/TDbamJp.png',
- '   https://i.imgur.com/btbpRmD.png',
-  '  https://i.imgur.com/GfTxxVk.png',
-  '  https://i.imgur.com/d4wKIKT.png',
+   'https://i.imgur.com/lp32Qtc.png',
+    'https://i.imgur.com/4W9vHQd.png',
+'    https://i.imgur.com/kJN8a32.png',
+ '   https://i.imgur.com/TsgyhdH.png',
+  ' https://i.imgur.com/aiYhRPc.png',
+  '  https://i.imgur.com/tPGmRbG.png',
    
-'   https://i.imgur.com/s4JLtP3.png',
-'   https://i.imgur.com/HUFQdL4.png',
+'   https://i.imgur.com/6Ph9xcI.png',
+'  https://i.imgur.com/WZsH6mp.png',
     
-'https://i.imgur.com/FIB9MnG.png',
+'https://i.imgur.com/ZGmED3Y.png',
     
-  '  https://i.imgur.com/icL1AM1.png',
+  ' https://i.imgur.com/GEKmFtc.png',
  
-  '  https://i.imgur.com/8hGTjqx.png',
- '   https://i.imgur.com/oQka5oy.png',
-  '  https://i.imgur.com/OfBciUI.png',
+  ' https://i.imgur.com/mvxNAnq.png',
+ '   https://i.imgur.com/pOoVuqE.png',
+  '  https://i.imgur.com/Xv494aY.png',
     
-  '  https://i.imgur.com/cgApzxB.png',
+  '  https://i.imgur.com/ASwA0ER.png',
 
     
-  '  https://i.imgur.com/JU5k7Ke.png',
-  '  https://i.imgur.com/kFVHygs.png',
-   ' https://i.imgur.com/0DzM10H.png',
-  '  https://i.imgur.com/j6Y7lBf.png',
-  '  https://i.imgur.com/X5eZvlr.png',
+  '  https://i.imgur.com/GPipCkC.png',
+  ' https://i.imgur.com/pU72Rhx.png',
+   ' https://i.imgur.com/dSo7UWv.png',
+  '  https://i.imgur.com/L1qYAVd.png',
+  '  https://i.imgur.com/ivGR6DJ.png',
  '   https://i.imgur.com/FLJ31p1.png',
-  '  https://i.imgur.com/h1j14Lq.png',
-  '  https://i.imgur.com/7VMwdF0.png',
-  '  https://i.imgur.com/bEbFnOS.png',
-   ' https://i.imgur.com/S5XatpH.png',
-   ' https://i.imgur.com/lKBrEpJ.png',
-  '  https://i.imgur.com/PqwIWPi.png',
-  '  https://i.imgur.com/RQNQ6KM.png',
-  '  https://i.imgur.com/T4FVvpd.png',
-  '  https://i.imgur.com/brOYD7I.png',
-  '  https://i.imgur.com/evpmcRR.png',
-  '  https://i.imgur.com/R5LFJKa.png',
-  '  https://i.imgur.com/92yOs0q.png',
-  '  https://i.imgur.com/zrO0n4Y.png',
-  '  https://i.imgur.com/VpoK5Z3.png',
-    
+  ' https://i.imgur.com/hnzpwAk.png',
+  '  https://i.imgur.com/Hxvzq5X.png',
+  '  https://i.imgur.com/QpsVTOt.png',
+ 
 
     ]
 var mediumCards = [
