@@ -46,25 +46,22 @@ var easyCards = [
     ]
 var mediumCards = [
 
-   ' https://i.imgur.com/2XLSxKE.png',
-    'https://i.imgur.com/sUBEZnx.png',
-'    https://i.imgur.com/HhOAEcc.png',
- '   https://i.imgur.com/V8zj8oR.png',
-  '  https://i.imgur.com/pP9C5xy.png',
-  '  https://i.imgur.com/UCcYgRj.png',
+   ' https://i.imgur.com/nLrrcCQ.png',
+    'https://i.imgur.com/GYZ2uiU.png',
+'  https://i.imgur.com/YckoZEf.png',
+ '  https://i.imgur.com/wJw3K4i.png',
+  '  https://i.imgur.com/Lh6Pfu5.png',
+  ' https://i.imgur.com/Bripkqj.png',
    
-'   https://i.imgur.com/rmLryiV.png',
-'   https://i.imgur.com/bjtihMV.png',
+'   https://i.imgur.com/CzgNbXR.png',
+'  https://i.imgur.com/HtrlHDL.png',
     
-'https://i.imgur.com/ct0pgp4.png',
+'https://i.imgur.com/giR11ng.png',
     
-  '  https://i.imgur.com/Z63iFzZ.png',
+  ' https://i.imgur.com/hvPrBhK.png',
  
-  '  https://i.imgur.com/8hGTjqx.png',
- '   https://i.imgur.com/oQka5oy.png',
-  '  https://i.imgur.com/OfBciUI.png',
-    
-  '  https://i.imgur.com/cgApzxB.png',
+  ' https://i.imgur.com/arW9q3Y.png',
+
 
   
     
@@ -72,26 +69,11 @@ var mediumCards = [
     ]
 var easyMediumCards = easyCards.concat(mediumCards);
 var hardCards = [
-    'https://i.imgur.com/Cf5el2Z.png',
-    'https://i.imgur.com/sL9BHVq.png',
-    'https://i.imgur.com/hvGe8Wi.png',
-    'https://i.imgur.com/cFszvte.png',
-    'https://i.imgur.com/DKsCWsm.png',
-    'https://i.imgur.com/JuIgrRr.png',
-    'https://i.imgur.com/UncUMFI.png',
-    'https://i.imgur.com/JHxeEKr.png'
+ 
     ]
 var easyMediumHard = easyMediumCards.concat(hardCards);
 var expertCards = [
-    'https://i.imgur.com/sF9QSmg.png',
-    'https://i.imgur.com/qbiRUJS.png',
-    'https://i.imgur.com/cULM6FG.png',
-    'https://i.imgur.com/YoeuSNh.png',
-    'https://i.imgur.com/Tr0K2e6.png',
-    'https://i.imgur.com/vKd3HJL.png',
-    'https://i.imgur.com/vciN8TG.png',
-    'https://i.imgur.com/StRi59Z.png',
-    'https://i.imgur.com/Loew64P.png'
+    
     ]
 
 window.onload = function () {
