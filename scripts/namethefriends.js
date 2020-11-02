@@ -66,7 +66,7 @@ var hardCards = [
     ' https://i.imgur.com/L90nKO7.png',
     ' https://i.imgur.com/5mBMTWM.png',
     'https://i.imgur.com/wkuAJ3o.png',
-    ' https://i.imgur.com/Pgz8uF8.png',
+  
     ' https://i.imgur.com/Va8AuAk.png',
     ' https://i.imgur.com/4rgZknA.png',
     ' https://i.imgur.com/1ifwdH8.png',
