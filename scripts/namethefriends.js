@@ -70,6 +70,17 @@ var hardCards = [
     ' https://i.imgur.com/Va8AuAk.png',
     ' https://i.imgur.com/4rgZknA.png',
     ' https://i.imgur.com/1ifwdH8.png',
+      ' https://i.imgur.com/aI6dI26.png',
+      ' https://i.imgur.com/Mp8NEyS.png',
+      ' https://i.imgur.com/lQAYTDi.png',
+      'https://i.imgur.com/VDUceRZ.png',
+      ' https://i.imgur.com/TEPsm2c.png',
+      ' https://i.imgur.com/YeFMdIb.png',
+      ' https://i.imgur.com/Jxpr1kD.png',
+      ' https://i.imgur.com/nmpmxCR.png',
+      ' https://i.imgur.com/HzRXktm.png',
+  'https://i.imgur.com/sUyZuhv.png'
+  
     ]
 var easyMediumHard = easyMediumCards.concat(hardCards);
 var expertCards = [
